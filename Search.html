@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Website</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ✅ السلايدر الجانبي -->
+  <div id="navBar">
+    <div class="nav">
+        <img src="images/logo.png" alt="" class="w-100">
+        <i class="close fa-solid open-close-icon fa-2x fa-x d-none text-dark"></i>
+        <i class="open fa-solid open-close-icon fa-2x fa-align-justify text-dark"></i>
+        <div>
+            <i class="fa-solid fa-globe d-block text-dark"></i>
+            <i class="fa-solid fa-share-nodes text-dark"></i>
+        </div>
+    </div>
+    <div class="links">
+        <ul class="list-unstyled overflow-hidden py-4 px-5">
+            <li class="pb-3"> <a href="category.html" class="text-white text-decoration-none"> Categories </a> </li>
+            <li class="pb-3"> <a href="home.html" class="text-white text-decoration-none"> HOME </a> </li>
+            <li class="pb-3"> <a href="area.html" class="text-white text-decoration-none"> AREA </a> </li>
+            <li class="pb-3"> <a href="Ingredients.html" class="text-white text-decoration-none"> Ingredients </a> </li>
+            <li class="pb-3"> <a href="Contact Us.html" class="text-white text-decoration-none"> Contact Us </a> </li>
+        </ul>
+    </div>
+    <div class="socials text-light">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <p>Copyright © 2019 All Rights Reserved.</p>
+    </div>
+  </div>
+
+  <!-- ✅ زرار فتح القائمة -->
+  <i id="menuIcon" class="fa-solid fa-align-justify fa-2x position-fixed top-3 start-3 text-dark cursor-pointer"></i>
+
+  <!-- ✅ البحث -->
+  <div class="container w-75 mt-5">
+      <div class="row py-4">
+          <div class="col-md-6">
+              <input onkeyup="SearchByName(this.value)" class="form-control bg-transparent text-white" type="text" placeholder="Search By Name">
+          </div>
+          <div class="col-md-6">
+              <input onkeyup="SearchByFirstLetter(this.value)" maxlength="1" class="form-control bg-transparent text-white" type="text" placeholder="Search By First Letter">
+          </div>
+      </div>
+  </div>
+
+  <!-- ✅ عرض نتائج البحث -->
+  <section>
+      <div class="container">
+          <div id="items" class="row py-3 g-4"></div>
+      </div>
+  </section>
+
+  <script src="js/jquery-3.6.3.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/Search.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,169 @@
+body{
+    background-color: black;
+    color:#f9f6f6;
+}
+
+.layerHome,
+.layerCatogery{
+    cursor: pointer;
+}
+
+i{
+    cursor: pointer; 
+}
+
+#hidde {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#navBar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    z-index: 999999;
+    background-color: black;
+    justify-content: space-between;
+  }
+  .nav {
+    background-color: rgb(255, 255, 255);
+    width: 60px;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    cursor: pointer;
+    align-self: self-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-block: 1rem;
+    text-align: center;
+  }
+  
+  .socials {
+    max-width: 80%;
+  }
+
+
+
+   
+.layerHome {
+    color: rgb(0, 0, 0);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    overflow: hidden;
+    transition: all .5s;
+
+    
+}
+.layerHome h2 {
+    position: relative;
+    top: 100%;
+    transition: all .5s .5s;
+}
+.layerHome:hover {
+    background-color: #f9f6f6ca;
+
+} 
+
+.layerHome:hover h2{
+    top: 0;
+}
+
+
+  
+.layerCatogery {
+    color: rgb(0, 0, 0);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    overflow: hidden;
+    transition: all .5s;
+    padding-top: 1rem;
+
+    
+
+    
+}
+.layerCatogery h2 ,
+.layerCatogery p {
+    position: relative;
+    top: 100%;
+    transition: all .5s .5s;
+}
+.layerCatogery:hover {
+    background-color: #f9f6f6ca;
+} 
+
+.layerCatogery:hover h2,
+.layerCatogery:hover p{
+    top: 0;
+}
+
+
+
+.cust-ico{
+    font-size: 4rem;
+    padding-right: 15px;
+    
+}
+
+
+.valid{
+    background-color: #f8d7da;
+    border-color:  #f8d7da;
+    color: #842029;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 10px;
+    text-align: center;
+    
+    
+}
+
+
+
+
+.meal-layer {
+    color: rgb(0, 0, 0);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    overflow: hidden;
+    transition: all .5s;
+
+    
+}
+.meal-layer h2 {
+    position: relative;
+    top: 100%;
+    transition: all .5s .5s;
+}
+.meal-layer:hover {
+    background-color: #f9f6f6ca;
+
+} 
+
+.meal-layer:hover h2{
+    top: 0;
+}
+
+
+.alert{
+background-color: #cff4fc;
+color: #055160;
+background-color: #b6effb;
+}
+
